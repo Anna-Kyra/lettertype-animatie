@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'DecovarAlpha';
+    src: url('/style/assets/fonts/DecovarAlpha-VF.ttf');
+}
+
+body {
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'DecovarAlpha';
+    font-size: 10em;
+    animation-name: typo-animatie;
+    animation-duration: 1s;
+    animation: typo-animatie 1s infinite;
+}
+
+@keyframes typo-animatie {
+    0% {
+        font-variation-settings: "WMX2" 0;
+    }
+
+    50% {
+        font-variation-settings: "WMX2" 1000;
+    }
+
+    100% {
+        font-variation-settings: "WMX2" 0;
+    }
+}
